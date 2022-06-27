@@ -90,19 +90,16 @@ export default function Layout({ children }: LayoutProps) {
                         }}
                     >
                         <HeaderLink
-                            content='Sobre o treinamento'
-                            url='/#metrics'
-                            onClick={handleToggleDrawer}
+                            content='Home'
+                            url='/'
                         />
                         <HeaderLink
-                            content='O que dizem sobre o treinamento'
-                            url='/#testimonials'
-                            onClick={handleToggleDrawer}
+                            content='Equipe'
+                            url='/equipe'
                         />
                         <HeaderLink
-                            content='Começar agora'
-                            url='/#purchase'
-                            onClick={handleToggleDrawer}
+                            content='Contato'
+                            url='/contato'
                         />
                     </Drawer>
                 }
@@ -117,25 +114,18 @@ export default function Layout({ children }: LayoutProps) {
                 </HeaderLogoContainer>
                 <HeaderLinksContainer>
                     <HeaderLink
-                        content='Sobre nós'
+                        content='Home'
                         url='/'
                     />
                     <HeaderLink
-                        content='Sobre o treinamento'
-                        url='/'
+                        content='Equipe'
+                        url='/equipe'
+                    />
+                    <HeaderLink
+                        content='Contato'
+                        url='/contato'
                     />
                 </HeaderLinksContainer>
-                <HeaderAuthenticationContainer>
-                    <PrimaryButton
-                        ariaLabel='Começar agora'
-                        title='Começar agora'
-                        size='large'
-                        onClick={() => { }}
-                        style={{
-                            backgroundColor: theme.colors.secondary,
-                        }}
-                    />
-                </HeaderAuthenticationContainer>
             </Header>
             <main>{children}</main>
             <Footer
@@ -165,7 +155,7 @@ export default function Layout({ children }: LayoutProps) {
                         githubUrl='https://github.com/pablolucio97'
                         instagramUrl='https://www.instagram.com/pablosilva.dev'
                         iconsSize='small'
-                        iconsStyle={{color: theme.colors.secondary}}
+                        iconsStyle={{ color: theme.colors.white500 }}
                     />
                 </FooterSecondSection>
             </Footer>
