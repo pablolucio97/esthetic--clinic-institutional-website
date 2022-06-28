@@ -180,15 +180,6 @@ padding: 16px;
 }
 @media(max-width: 720px){
   width: 100%;
-  align-items: flex-start;
-}
-
-
-& h3{
-  margin-left: 20px;
-  @media(max-width: 1080px){
-    margin-left: 0;
-}
 }
 `
 
@@ -200,30 +191,10 @@ width: 50%;
 padding: 16px;
 @media(max-width: 1080px){
   width: 100%;
-  margin-left: 24px;
   margin: 0 auto;
 }
 @media(max-width: 720px){
   width: 100%;
-  align-items: flex-start;
-  margin-left: 0;
 }
 
-& h3{
-  margin-right: 40px;
-  @media(max-width: 1080px){
-    margin-right: 80px;
-}}
 `
-
-
-
-
-
-export const FaqSectionSectionContainer = styled.div`
-  display: flex;
-`;
-
-export const PurchaseSectionSectionContainer = styled.div`
-  display: flex;
-`;

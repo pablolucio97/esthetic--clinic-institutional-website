@@ -16,7 +16,7 @@ export const InfoSectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 80px 40px;
   width: 1400px;
   margin: 0 auto;
   
@@ -44,15 +44,14 @@ export const CardsSection = styled.section`
 export const CardsSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 40px 80px;
   width: 1200px;
   margin: 0 auto;
   @media (max-width: 1080px) {
-    padding: 0;
     width: 90%;
   }
   @media (max-width: 720px) {
-    padding: 0;
+    padding: 0 40px;
   }
 `;
 

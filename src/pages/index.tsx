@@ -28,6 +28,7 @@ import dynamic from 'next/dynamic'
 import { TextList } from '../components/Elements/TextList'
 import { surgeriesList, treatmentsList } from '../data/data'
 import { RevealZoom } from '../components/Animations/RevealZoom'
+import { Badge } from '../components/Elements/Badge'
 
 const CountUp = dynamic(() => import('react-countup'), { ssr: false })
 
@@ -45,7 +46,7 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#00C2FF" />
       </Head>
       <BannerSection>
-        <BannerSectionContainer/>
+        <BannerSectionContainer />
       </BannerSection>
       <IntroductionSection id='sobremim'>
         <IntroductionSectionContainer>
@@ -133,9 +134,13 @@ const Home: NextPage = () => {
                 content='Tratamentos estéticos'
               />
               <RevealZoom>
-                <TextList
-                  list={treatmentsList}
-                />
+                {treatmentsList.map(item => (
+                  <Badge
+                  key={item}
+                    title={item}
+                    textVariant='light'
+                  />
+                ))}
               </RevealZoom>
             </ServicesSurgeriesContainer>
             <ServicesTreatmentsContainer>
@@ -143,9 +148,13 @@ const Home: NextPage = () => {
                 content='Cirurgias estéticas'
               />
               <RevealZoom>
-                <TextList
-                  list={surgeriesList}
-                />
+                {surgeriesList.map(item => (
+                  <Badge
+                  key={item}
+                    title={item}
+                    textVariant='light'
+                  />
+                ))}
               </RevealZoom>
             </ServicesTreatmentsContainer>
           </ServicesSectionContentContainer>

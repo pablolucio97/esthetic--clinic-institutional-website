@@ -47,7 +47,6 @@ export function ImageContentCard({
                     src={imgUrl}
                     width={320}
                     height={240}
-                    layout='responsive'
                     alt='psd'
                 />
             </ImageContainer>
