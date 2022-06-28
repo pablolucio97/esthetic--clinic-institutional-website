@@ -22,6 +22,8 @@ import { TopScrollButton } from '../components/Elements/TopScrollButton';
 import { Text } from '../components/Typography/Text';
 import { Container } from './styles';
 
+import {NextProgressComponent} from '../components/Next/NextProgress'
+
 interface LayoutProps {
     children: ReactNode;
 }
@@ -72,6 +74,9 @@ export default function Layout({ children }: LayoutProps) {
 
     return (
         <Container id='top'>
+            <NextProgressComponent
+                color={theme.colors.white100}
+            />
             <TopScrollButton
                 ariaLabel='Voltar para o topp'
                 className={scrollTopAnimation ? 'animatedTopScroll' : 'normalTopScroll'}
@@ -92,14 +97,17 @@ export default function Layout({ children }: LayoutProps) {
                         <HeaderLink
                             content='Home'
                             url='/'
+                            onClick={handleToggleDrawer}
                         />
                         <HeaderLink
                             content='Equipe'
                             url='/equipe'
+                            onClick={handleToggleDrawer}
                         />
                         <HeaderLink
                             content='Contato'
                             url='/contato'
+                            onClick={handleToggleDrawer}
                         />
                     </Drawer>
                 }

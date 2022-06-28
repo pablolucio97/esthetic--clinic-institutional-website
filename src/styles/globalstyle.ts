@@ -109,7 +109,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .headerScrolling {
     position: fixed;
-    height: 40px;
+    height: 56px;
     background-color: ${({ theme }) => theme.colors.primary};
   }
 
@@ -120,6 +120,7 @@ export const GlobalStyle = createGlobalStyle`
   .animatedTopScroll {
     right: 24px;
     transition: all 0.3s ease;
+    background-color: ${({ theme }) => theme.colors.secondary};
   }
   .normalTopScroll {
     right: -80px;
@@ -150,6 +151,13 @@ export const GlobalStyle = createGlobalStyle`
     background: linear-gradient(45deg,  
       ${({ theme }) => theme.colors.error}, 
      ${({ theme }) => theme.colors.secondary});
+  }
+
+  .socialContactIcons{
+    width: 24px;
+    height: 24px;
+    color: ${(props) => props.theme.colors.secondary_dark};
+    margin-right: 8px;
   }
 
   //REACT-RESPONSIVE-CARROUSEL-CUSTOM -DOTS
