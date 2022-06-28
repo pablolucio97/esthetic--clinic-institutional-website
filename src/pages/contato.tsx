@@ -31,13 +31,13 @@ const Home: NextPage = () => {
   return (
     <Container>
       <Head>
-        <title>Danilo Fotografias | Contato</title>
+        <title>Ramirez Clínica de Estética | Contato</title>
         {/* @ts-ignore */}
         <meta charset="UTF-8" />
-        <meta name="description" content="Landing pages de alta conversão e sites profissionais" />
-        <meta name="keywords" content="pablosilvadev pablo silva psd landing pages site institucional profissional " />
+        <meta name="description" content="Landing pages de alta conversão e sites institucionais para o seu negócio." />
+        <meta name="keywords" content="pablosilvadev pablo silva psd landing pages" />
         <meta name='author' content='Pablo Silva' />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#00C2FF" />
       </Head>
       <BannerSection id='home'>
         <BannerSectionContainer>
