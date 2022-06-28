@@ -23,6 +23,7 @@ import { Text } from '../components/Typography/Text';
 import { Container } from './styles';
 
 import {NextProgressComponent} from '../components/Next/NextProgress'
+import { WhatsappButton } from '../components/Elements/WhatsappButton';
 
 interface LayoutProps {
     children: ReactNode;
@@ -78,10 +79,15 @@ export default function Layout({ children }: LayoutProps) {
                 color={theme.colors.white100}
             />
             <TopScrollButton
-                ariaLabel='Voltar para o topp'
+                ariaLabel='Voltar para o topo'
                 className={scrollTopAnimation ? 'animatedTopScroll' : 'normalTopScroll'}
                 icon={<MdArrowUpward />}
                 elementReferenceId='top'
+            />
+            <WhatsappButton
+                ariaLabel='Voltar para o topo'
+                className={scrollTopAnimation ? 'animatedTopScroll' : 'normalTopScroll'}
+                whatsappContact='31985187963'
             />
             <Header
                 className={headerAnimation ? 'headerScrolling' : 'headerNotScrolling'}

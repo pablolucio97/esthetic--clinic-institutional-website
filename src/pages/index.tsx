@@ -45,9 +45,7 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#00C2FF" />
       </Head>
       <BannerSection>
-        <BannerSectionContainer>
-          <p>ok</p>
-        </BannerSectionContainer>
+        <BannerSectionContainer/>
       </BannerSection>
       <IntroductionSection id='sobremim'>
         <IntroductionSectionContainer>
