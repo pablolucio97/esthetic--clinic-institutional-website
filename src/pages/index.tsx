@@ -27,6 +27,7 @@ import { SubTitle } from '../components/Typography/SubTitle'
 import dynamic from 'next/dynamic'
 import { TextList } from '../components/Elements/TextList'
 import { surgeriesList, treatmentsList } from '../data/data'
+import { RevealZoom } from '../components/Animations/RevealZoom'
 
 const CountUp = dynamic(() => import('react-countup'), { ssr: false })
 
@@ -45,7 +46,7 @@ const Home: NextPage = () => {
       </Head>
       <BannerSection>
         <BannerSectionContainer>
-        <p>ok</p>
+          <p>ok</p>
         </BannerSectionContainer>
       </BannerSection>
       <IntroductionSection id='sobremim'>
@@ -133,17 +134,21 @@ const Home: NextPage = () => {
               <SubTitle
                 content='Tratamentos estéticos'
               />
-              <TextList
-                list={treatmentsList}
-              />
+              <RevealZoom>
+                <TextList
+                  list={treatmentsList}
+                />
+              </RevealZoom>
             </ServicesSurgeriesContainer>
             <ServicesTreatmentsContainer>
               <SubTitle
                 content='Cirurgias estéticas'
               />
-              <TextList
-                list={surgeriesList}
-              />
+              <RevealZoom>
+                <TextList
+                  list={surgeriesList}
+                />
+              </RevealZoom>
             </ServicesTreatmentsContainer>
           </ServicesSectionContentContainer>
         </ServicesSectionContainer>

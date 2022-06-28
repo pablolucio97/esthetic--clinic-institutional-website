@@ -26,7 +26,7 @@ import { Title } from '../components/Typography/Title'
 
 import { doctorsList, googleMapAddress } from '../data/data'
 import { CardsContainer, CardsSection, CardsSectionContainer, InfoSection, InfoSectionContainer } from '../styles/equipe'
-import { ImageContentCard } from '../components/ImageContentCard'
+import { ImageContentCard } from '../components/Cards/ImageContentCard'
 
 const Home: NextPage = () => {
 

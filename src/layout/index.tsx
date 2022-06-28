@@ -143,20 +143,20 @@ export default function Layout({ children }: LayoutProps) {
             >
                 <FooterFirstSection>
                     <FooterTitle
-                        content='O treinamento'
+                        content='Sobre nós'
                     />
                     <FooterLink
-                        content='Sobre o treinamento'
-                        url='/#metrics'
+                        content='Equipe'
+                        url='/equipe'
                     />
                     <FooterLink
-                        content='O que dizem sobre o treinamento'
-                        url='/#testimonials'
+                        content='Contato'
+                        url='/contato'
                     />
                 </FooterFirstSection>
                 <FooterSecondSection>
                     <FooterTitle
-                        content='Contato'
+                        content='Redes sociais'
                     />
                     <SocialIcons
                         linkedinUrl='https://www.linkedin.com/in/pablo-silva-76b521156'
