@@ -9,19 +9,24 @@ export const Container = styled.div`
 export const BannerSection = styled.section`
   display: flex;
   width: 100%;
-  min-height: 76vh;
+  min-height: 120vh;
+
+  @media(max-width: 1440px){
+     min-height: 90vh;
+    background-color: red;
+  } 
   @media(max-width: 1080px){
-    min-height: 24vh;
+    min-height: 56vh;
   }
   @media(max-width: 720px){
-    min-height: 20vh;
+    min-height: 40vh;
   }
 `;
 
 export const BannerSectionContainer = styled.div`
   width: 100%;
   margin: 0 auto;
-  background-image: url("/images/clinic2.jpg");
+  background-image: url("/images/banner-contact.png");
   background-repeat: no-repeat;
   background-size: cover;
 `;
