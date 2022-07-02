@@ -72,6 +72,16 @@ export const IntroductionSectionContentContainer = styled.div`
       text-align: center;
     }
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 0;
+    & h1 {
+      text-align: center;
+      color: cyan;
+      background: red;
+    }
+  }
 `;
 export const IntroductionSectionImageContainer = styled.div`
   display: flex;
@@ -147,8 +157,11 @@ export const ServicesSection = styled.section`
   min-height: 40vh;
   background-color: ${({ theme }) => theme.colors.white100};
   margin: 0 auto -120px;
-  & h1{
+  @media (max-width: 720px) {
+  }
+  & h1, h3{
     margin: 0 auto;
+    text-align: center;
   }
 `;
 
