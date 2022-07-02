@@ -25,7 +25,6 @@ import {
 } from '../styles'
 import { SubTitle } from '../components/Typography/SubTitle'
 import dynamic from 'next/dynamic'
-import { TextList } from '../components/Elements/TextList'
 import { surgeriesList, treatmentsList } from '../data/data'
 import { RevealZoom } from '../components/Animations/RevealZoom'
 import { Badge } from '../components/Elements/Badge'

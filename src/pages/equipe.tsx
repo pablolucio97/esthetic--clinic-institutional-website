@@ -1,32 +1,20 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import { FiFacebook, FiInstagram, FiLinkedin } from 'react-icons/fi'
-
-import { SubTitle } from '../components/Typography/SubTitle'
-import { Container } from '../layout/styles'
 
 import {
-  ContactSection,
-  ContactSectionAddressContainer,
-  ContactSectionCommunicationContainer,
-  ContactSectionContactInfoContainer,
-  ContactSectionContainer,
-  ContactSectionContentContainer,
-  ContactSectionMapContainer,
-  ContactSectionSocialContainer,
-  MapContainer,
-  BannerSection,
-  BannerSectionContainer,
-  SocialItemContainer
-} from '../styles/contato'
+  CardsContainer,
+  CardsSection,
+  CardsSectionContainer,
+  InfoSection,
+  InfoSectionContainer
+} from '../styles/equipe'
 
-import { GoogleMap } from '../components/Elements/GoogleMap'
+import { Container } from '../layout/styles'
 import { Text } from '../components/Typography/Text'
 import { Title } from '../components/Typography/Title'
-
-import { doctorsList, googleMapAddress } from '../data/data'
-import { CardsContainer, CardsSection, CardsSectionContainer, InfoSection, InfoSectionContainer } from '../styles/equipe'
 import { ImageContentCard } from '../components/Cards/ImageContentCard'
+
+import { doctorsList } from '../data/data'
 
 const Home: NextPage = () => {
 
