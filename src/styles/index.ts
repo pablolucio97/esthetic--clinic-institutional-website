@@ -77,7 +77,6 @@ export const IntroductionSectionContentContainer = styled.div`
     padding: 0;
     & h1 {
       text-align: center;
-      color: cyan;
     }
   }
 `;
