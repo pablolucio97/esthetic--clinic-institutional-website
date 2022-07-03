@@ -64,7 +64,7 @@ const Home: NextPage = () => {
             />
             <RevealFade>
               <Text
-                content='Construída em 1964, a clínica de tratamento estético Ramirez vem atendendo pacientes que desejam relizar tratamentos estéticos e cirurgias.'
+                content='Construída em 1964, a clínica de tratamento estético Ramirez vem atendendo pacientes que desejam realizar tratamentos estéticos e cirurgias.'
               />
               <Text
                 content='Contamos com uma equipe composta por profissionais qualificado e com sólida experiência. Nossa unidade é equipada com o que há de mais moderno para proporcionar procedimentos cirúrgicos da forma mais segura possível.'
@@ -102,7 +102,7 @@ const Home: NextPage = () => {
                 duration={3}
               />
               <SubTitle
-                content='Tratamentos finalizado'
+                content='Tratamentos finalizados'
               />
             </CountUpContainer>
 
