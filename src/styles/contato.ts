@@ -13,7 +13,6 @@ export const BannerSection = styled.section`
 
   @media(max-width: 1440px){
      min-height: 90vh;
-    background-color: red;
   } 
   @media(max-width: 1080px){
     min-height: 56vh;

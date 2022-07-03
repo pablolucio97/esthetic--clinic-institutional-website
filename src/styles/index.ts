@@ -15,7 +15,6 @@ export const BannerSection = styled.section`
 
   @media(max-width: 1440px){
      min-height: 90vh;
-    background-color: red;
   } 
   @media(max-width: 1080px){
     min-height: 56vh;
@@ -79,7 +78,6 @@ export const IntroductionSectionContentContainer = styled.div`
     & h1 {
       text-align: center;
       color: cyan;
-      background: red;
     }
   }
 `;
